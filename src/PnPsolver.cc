@@ -49,7 +49,7 @@
 */
 
 #include <iostream>
-
+#include "unistd.h"
 #include "PnPsolver.h"
 
 #include <vector>

@@ -25,7 +25,7 @@
 #include <thread>
 #include <pangolin/pangolin.h>
 #include <iomanip>
-
+#include "unistd.h"
 // Get current directory of the system
 #include <unistd.h>  
 #include <dirent.h>

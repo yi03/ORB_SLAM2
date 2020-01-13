@@ -24,7 +24,7 @@
 #include<fstream>
 #include<chrono>
 #include<iomanip>
-
+#include "unistd.h"
 #include<opencv2/core/core.hpp>
 
 #include"System.h"
@@ -161,8 +161,6 @@ void LoadImages(const string &strPathToSequence, vector<string> &vstrImageFilena
 
     for(int i=0; i<nTimes; i++)
     {
-        stringstream ss;
-        ss << setfill('0') << setw(6) << i;
-        vstrImageFilenames[i] = strPrefixLeft + ss.str() + ".png";
+        vstrImageFilenames[i] = strPrefixLeft + to_string(i) + ".jpg";
     }
 }

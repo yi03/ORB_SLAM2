@@ -19,7 +19,7 @@
 */
 
 #include "ORBmatcher.h"
-
+#include "unistd.h"
 #include<limits.h>
 
 #include<opencv2/core/core.hpp>
